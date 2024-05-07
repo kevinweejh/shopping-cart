@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 const ErrorPage = () => {
-    return (
-        <>
-            <h1>bruh...</h1>
-        </>
-    )
-}
+  const navigate = useNavigate();
+  return (
+    <>
+      <h1>bruh...</h1>
+      <button onClick={() => navigate(-1)}>Bring me back!!</button>
+    </>
+  );
+};
 
 export default ErrorPage;
