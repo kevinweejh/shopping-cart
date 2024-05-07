@@ -27,15 +27,17 @@ const Cart = () => {
           cart.map((cartItem) => {
             return <ProductLineItem key={cartItem.id} cartItem={cartItem} />;
           })}
-        <div className="flex w-full p-2 justify-end">
-          <button
-            className="text-white font-semibold text-center w-1/4 p-2 border-white border rounded-md hover:bg-gray-600"
-            type="submit"
-            onClick={handleCheckout}
-          >
-            Checkout
-          </button>
-        </div>
+        {cart.length !== 0 && (
+          <div className="flex w-full p-2 justify-end">
+            <button
+              className="text-white font-semibold text-center w-1/4 p-2 border-white border rounded-md hover:bg-gray-600"
+              type="submit"
+              onClick={handleCheckout}
+            >
+              Checkout
+            </button>
+          </div>
+        )}
       </div>
     </>
   );
