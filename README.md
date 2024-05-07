@@ -8,7 +8,7 @@
 #### Description: 
 `Mock Shopping Cart` is a dynamic e-commerce shopping cart experience crafted to demonstrate the use of React in building responsive and functional web applications. This project is great for those looking to understand the implementation of shopping cart functionalities in a React application.
 
-Check out the live version here: [Mock Shopping Cart Demo]().
+Check out the live version here: [Mock Shopping Cart Demo](https://fancy-kulfi-3f9fdb.netlify.app).
 
 ### Key Features
 
