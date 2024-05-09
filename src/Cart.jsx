@@ -21,7 +21,9 @@ const Cart = () => {
         {cart.length === 0 ? (
           <h2 className="text-white text-center font-thin">Your cart is empty, dear.</h2>
         ) : (
-          <h2 className="text-white text-center font-thin">Total: {total}</h2>
+          <h2 className="text-white text-center font-thin">
+            Total: {Math.round((total + Number.EPSILON) * 100) / 100}
+          </h2>
         )}
         {cart.length !== 0 &&
           cart.map((cartItem) => {
