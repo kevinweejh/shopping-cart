@@ -4,12 +4,8 @@ import ProductLineItem from './ProductLineItem';
 
 const Cart = () => {
   const { cart } = useOutletContext();
-  let total = 0;
-  if (cart.length > 0) {
-    for (let cartItem of cart) {
-      total += cartItem.price * cartItem.quantity;
-    }
-  }
+  // cart array reduced to obtain cart total, returns initial value 0 if cart empty
+  const total = cart.reduce((sum, currentValue) => sum + currentValue.price * currentValue.quantity, 0);
 
   const handleCheckout = (e) => {
     e.preventDefault();
