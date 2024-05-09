@@ -1,7 +1,7 @@
 ---
 name: Refactor
 about: Suggest a refactor for the code
-title: "[Refactor]"
+title: 'Refactor: [Brief description]'
 labels: ''
 assignees: ''
 
